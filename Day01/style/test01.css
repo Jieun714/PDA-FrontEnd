@@ -16,3 +16,14 @@ section ul li{
 section ol li{
     list-style-type: lower-roman;
 }
+ #area1{
+    background-color: #769FCD;
+ }  
+
+ #area2{
+    background-color: #D6E6F2;
+ }
+ .imgStyle{
+    width: 300px;
+    height: 150px;
+ }
