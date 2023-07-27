@@ -15,12 +15,16 @@
         tr td, tr th {
             border: 1px solid silver;
             text-align: center;
+            height: 20px;
         }
         tr th{
             background-color: #769FCD;
         }
         col.t {
             background-color: #D6E6F2;
+        }
+        .left{
+            background-color: #F2BED1;
         }
     </style>
 </head>
@@ -58,20 +62,42 @@
             </tr>
         </tbody>
     </table>
+    <br>
 
-
+    <table>
+        <caption>[표2] 테이블 자료</caption>
+        <tbody>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 
     <br>
     <table>
         <caption>문제</caption>
         <tbody>
             <tr>
-                <td>1</td>
+                <td class="left">1</td>
                 <td colspan="2">2</td>
                 <td>3</td>
             </tr>
             <tr>
-                <td rowspan="2">4</td>
+                <td class="left" rowspan="2">4</td>
                 <td colspan="3">5</td>
             </tr>
             <tr>
