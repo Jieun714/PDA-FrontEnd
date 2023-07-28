@@ -10,11 +10,13 @@
 <body>
     <form method="get" action="r">
         <ul>
+            <!-- input type text -->
             <li>
                 <label for="id"></label>
                 <input type="text" name="id" id="id" required placeholder="아이디를 입력하세요" maxlength="5"
                     focus><!-- readonly로 하면 입력을 고정할 수 있음-->
             </li>
+            <!-- input tpye password -->
             <li>
                 <label for="pwd">패스워드 : </label>
                 <input type="password" id="pwd" name="pwd" required maxlength="5" minlength="3" autofocus>
@@ -26,6 +28,7 @@
             <li>
                 <input type="hidden" name="data" value="test">
             </li>
+            <!-- input type radio -->
             <li>
                 <label>성별 선택 : </label>
                 <label for="m">남자</label>
@@ -33,6 +36,7 @@
                 <label for="w">여자</label>
                 <input type="radio" id="w" value="여자" name="gender">
             </li>
+            <!-- input type fieldset -->
             <li>
                 <fieldset>
                     <legend>분식 선택 : </legend>
@@ -44,10 +48,12 @@
                     <input type="checkbox" value="어묵" id="f3" name="favfood">
                 </fieldset>
             </li>
+            <!-- input type file -->
             <li>
                 <label for="file1">업로드 파일</label>
                 <input type="file" value="file1" name="file1">
             </li>
+            <!-- input type email, tel, url -->
             <li>
                 <label for="myemail">이메일</label>
                 <input type="email" id="myemail" name="myemail" required>
@@ -59,6 +65,48 @@
             <li>
                 <label for="mypage">홈페이지</label>
                 <input type="url" id="mypage" name="mypage" required>
+            </li>
+            <li>
+                <label>수량</label>
+                <input type="number" name="stack_number" id="stack_number" min="30" max="100" step="10" value="50">
+            </li>
+            <li>
+                <label>범위</label>
+                <input type="range" name="range" id="range" min="10" max="20" step="2" value="14">
+            </li>
+            <li>
+                <input type="date" min="2023-07-05" max="2023-08-01">
+            </li>
+            <li>
+                <label for="dept">부서</label>
+                <select id="dept" name="dept" size="5" multiple>
+                    <option value="a">part-a</option>
+                    <option value="b">part-b</option>
+                    <option value="c">part-c</option>
+                    <optgroup label="세부목록">
+                        <option value="sub-1">sub-1</option>
+                        <option value="sub-2">sub-2</option>
+                        <option value="sub-3">sub-3</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <select id="fav" name="fac" size="10" multiple>
+                    <optgroup label="프로그래밍">
+                        <option value="p1">java</option>
+                        <option value="p2">spring</option>
+                        <option value="p3">Database</option>
+                    </optgroup>
+                    <optgroup label="DB">
+                        <option value="DB-1">mysql</option>
+                        <option value="DB-2">oracle</option>
+                        <option value="DB-3">mariaDB</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <label for="talk">하고싶은말</label>
+                <textarea name="talk" id="talk" rows="4" cols="20"></textarea>
             </li>
             <li>
                 <!-- <input type="submit" value="전송" id="send"> -->
