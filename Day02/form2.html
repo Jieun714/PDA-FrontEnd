@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" action="r">
+        <ul>
+            <li>
+                <label for="id"></label>
+                <input type="text" name="id" id="id" required placeholder="아이디를 입력하세요" maxlength="5"
+                    focus><!-- readonly로 하면 입력을 고정할 수 있음-->
+            </li>
+            <li>
+                <label for="pwd">패스워드 : </label>
+                <input type="password" id="pwd" name="pwd" required maxlength="5" minlength="3" autofocus>
+            </li>
+            <li>
+                <label for="name">이름 : </label>
+                <input type="text" id="name" name="name">
+            </li>
+            <li>
+                <input type="hidden" name="data" value="test">
+            </li>
+            <li>
+                <label>성별 선택 : </label>
+                <label for="m">남자</label>
+                <input type="radio" id="m" value="남자" name="gender" checked>
+                <label for="w">여자</label>
+                <input type="radio" id="w" value="여자" name="gender">
+            </li>
+            <li>
+                <fieldset>
+                    <legend>분식 선택 : </legend>
+                    <label for="f1">떡볶이</label>
+                    <input type="checkbox" value="떡볶이" id="f1" name="favfood">
+                    <label for="f2">김말이</label>
+                    <input type="checkbox" value="김말이" id="f2" name="favfood">
+                    <label for="f3">어묵</label>
+                    <input type="checkbox" value="어묵" id="f3" name="favfood">
+                </fieldset>
+            </li>
+            <li>
+                <label for="file1">업로드 파일</label>
+                <input type="file" value="file1" name="file1">
+            </li>
+            <li>
+                <label for="myemail">이메일</label>
+                <input type="email" id="myemail" name="myemail" required>
+            </li>
+            <li>
+                <label for="myphone">전화번호</label>
+                <input type="tel" id="myphone" name="myphone" required>
+            </li>
+            <li>
+                <label for="mypage">홈페이지</label>
+                <input type="url" id="mypage" name="mypage" required>
+            </li>
+            <li>
+                <!-- <input type="submit" value="전송" id="send"> -->
+                <!-- <input type="reset" value="취소"> -->
+                <button type="submit" id="send">전송</button>
+                <button type="reset" id="reset">취소</button>
+                <button type="button" id="btn" value="버튼">버튼</button>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>
