@@ -6,6 +6,7 @@ header{
 }
 nav ul{
     padding-left: 55%;
+    display: inline-block;
 }
 nav ul li{
     display: inline-block;
