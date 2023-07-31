@@ -1,8 +1,10 @@
+#wrap{
+    width:85%;
+    margin:0 auto;
+}
 header{
     background-color: #B4E4FF;
     border: 2px solid silver;
-}
-header div{
     padding: 1rem 1rem 0.5rem;
 }
 header img{
@@ -10,76 +12,79 @@ header img{
     height: 50px;
     background-color: lightgray;
 }
-.main{
+nav{
     background-color: #F7C8E0;
     border: 2px solid silver;
-    margin-top: 0.5rem;
     border-radius: 15px;
+    margin-top: 0.5rem;
 }
-.main ul {
-    display: flex;
+nav ul li{
+    list-style: none;
+    display: inline-block;
 }
-.main li{
-    width: 9rem;
-    padding-left: 1rem;
-    list-style-type: none; 
+nav ul li a{
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: black;
 }
-.main li:hover{
+nav li a:hover{
     background-color: #D9ACF5;
+    color: white;
     border-radius: 15px;
 }
-#main2{
+div.main{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 0.5rem;
 }
-aside {
-    width: 20%; height: 10%;
+.main aside{
+    width:25%;
+    height: 50%;
     background-color: #95BDFF;
-    border: 1px solid silver;
     border-radius: 15px;
 }
-/* aside nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-.aside{
-    padding: 5%;
+.main aside li{
+    list-style: none;
+    display: inline-block;
 }
-.aside:hover{
-    width: 80%;
-    background-color: #D9ACF5;
+.main aside li a{
+    display: inline-block;
+    /* flex-direction: column; */
+    padding:10px 30px;
+    text-decoration: none;
+    color: purple;
+}
+.main aside li a:hover{
+    background-color: purple;
+    color: white;
     border-radius: 15px;
-}
-aside li {
-    list-style-type: none;
 }
 article{
-    width: 80%;
-    margin-left: 0.5rem;
-    background-color: bisque;
-    border: 1px solid silver;
+    width:70%;
+    background:lightyellow;
+    border: 2px solid silver;
     border-radius: 15px;
-}
-#article{
-    padding: 1rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 2rem;
 }
 section{
-    width: 80%;
+    width: 70%;
     border: 2px solid silver;
     border-radius: 15px;
     background-color: white;
+    padding-left: 1.5rem;
+    margin-left: 2rem;
+}
+section h4{
+    color: red;
+    margin-left: 2rem;
+}
+section p{
     margin-left: 1.5rem;
 }
-#section{
-    padding-left: 3rem;
-}
-#section h4{
-    color: red;
-    padding-left: 1rem;
-}
 footer{
-    background-color: #DFFFD8;
+    background-color: #DFFFD8; 
     border: 1px solid silver;
     border-radius: 15px;
     margin-top: 0.5rem;
