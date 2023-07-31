@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :first-child{
+            border: 2px solid #79E0EE;
+        } */
+        /* p:first-of-type{  // p태그 중 하나를 선택하는 것
+            background-color: #D0F5BE;
+        } */
+
+        /* div:nth-child(1){ //짝수의 element를 선택
+            background-color: #FBFFDC;
+        } */
+        p:nth-of-type(2n) {
+            /* 짝수 선택 */
+            background-color: skyblue;
+        }
+
+        .test {
+            /* text-transform: capitalize; */
+            font-variant: small-caps;
+        }
+
+        .shadow {
+            color: #884A39;
+            font-size: 50px;
+            text-shadow: 5px 5px 5px #C38154,
+                /* 10px 10px 1px black, */
+                20px 20px 20px #FFC26F;
+        }
+        #tb{
+            width: 400px;
+            height: 200px;
+        }
+        #tb td{
+            border: 1px solid silver;
+            text-align: center;
+            vertical-align: top;
+            line-height: 40px;      
+        }
+    </style>
+</head>
+
+<body>
+    <div>div-1</div>
+    <p>p-1</p>
+    <div>div-2</div>
+    <p>p-2</p>
+    <div>div-3</div>
+    <p>p-3</p>
+    <div>div-4</div>
+    <p>p-4</p>
+    <div class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimus accusamus a animi provident,
+        voluptatem, deserunt, non adipisci labore doloremque accusantium corporis sed ea harum sit? Ducimus qui in
+        libero.
+    </div>
+    <div class="shadow">hello</div>
+
+    <br>
+    <table id="tb">
+        <tbody>
+            <tr>
+                <td>새로운 테이블 생성</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
