@@ -1,0 +1,89 @@
+header{
+    background-color: #B4E4FF;
+    border: 2px solid silver;
+}
+header div{
+    padding: 1rem 1rem 0.5rem;
+}
+header img{
+    width: 200px;
+    height: 50px;
+    background-color: lightgray;
+}
+.main{
+    background-color: #F7C8E0;
+    border: 2px solid silver;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+}
+.main ul {
+    display: flex;
+}
+.main li{
+    width: 9rem;
+    padding-left: 1rem;
+    list-style-type: none; 
+}
+.main li:hover{
+    background-color: #D9ACF5;
+    border-radius: 15px;
+}
+#main2{
+    display: flex;
+    margin-top: 0.5rem;
+}
+aside {
+    width: 20%; height: 10%;
+    background-color: #95BDFF;
+    border: 1px solid silver;
+    border-radius: 15px;
+}
+/* aside nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+.aside{
+    padding: 5%;
+}
+.aside:hover{
+    width: 80%;
+    background-color: #D9ACF5;
+    border-radius: 15px;
+}
+aside li {
+    list-style-type: none;
+}
+article{
+    width: 80%;
+    margin-left: 0.5rem;
+    background-color: bisque;
+    border: 1px solid silver;
+    border-radius: 15px;
+}
+#article{
+    padding: 1rem 0 2rem 2rem;
+}
+section{
+    width: 80%;
+    border: 2px solid silver;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: 1.5rem;
+}
+#section{
+    padding-left: 3rem;
+}
+#section h4{
+    color: red;
+    padding-left: 1rem;
+}
+footer{
+    background-color: #DFFFD8;
+    border: 1px solid silver;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+}
+footer p{
+    padding-left: 3rem;
+}
