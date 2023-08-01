@@ -1,0 +1,48 @@
+#wrap{
+    width: 85%;
+    margin: 0 auto;
+}
+header, aside, section, footer{
+    border: 1px solid silver;
+}
+main {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header h1{
+    padding: 1vh 2vw;
+}
+aside {
+    width: 20%;
+    height: 20vh;
+}
+section {
+    width: 55%;
+    padding-bottom: 2rem;
+}
+h2{
+    position: relative;
+    top: 1vh;
+    left: 2vw;
+}
+section p{
+    list-style: none;
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+}
+aside ul{
+    position: relative;
+    top: 1vh;
+}
+aside ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1vh 1vw;
+}
+footer{
+    margin-top: 2vh;
+    padding-left: 2vw;
+}
