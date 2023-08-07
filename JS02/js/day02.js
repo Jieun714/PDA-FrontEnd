@@ -146,7 +146,20 @@ console.log(false===0); //false
 
 console.log('----------------------------');
 
+/* 복합대입연산 */
+let a3 = 10;
+console.log('a3', a3);
+a3 += 30;
+console.log('a3', a3);
+a3/=4;
+console.log('a3', a3);
 
+let x1 = 10;
+let x2 = 20;
+let x3 = 4;
+
+x3 *= x1+x2;
+console.log(x3);
 
 console.log('----------------------------');
 
