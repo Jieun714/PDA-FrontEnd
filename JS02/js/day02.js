@@ -409,3 +409,11 @@ while(j>=2){
 }
 
 console.log('----------------------------');
+
+/* break, continue */
+let k=1;
+while(true){
+    console.log(k);
+    k++;
+    if(k==5) break;
+}
