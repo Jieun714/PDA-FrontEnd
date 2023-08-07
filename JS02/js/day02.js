@@ -233,7 +233,8 @@ document.getElementById('btn').onclick=function(){
 }
 */
 
-
+/* if-else 문 */
+/*
 document.getElementById('btn').onclick=function(){
     let eleKor = document.getElementById('kor');
     let eleEng = document.getElementById('eng');
@@ -260,4 +261,64 @@ document.getElementById('btn').onclick=function(){
     eleKor.value=''; //값 지우기
     eleEng.value=''; //값 지우기
     eleMath.value=''; //값 지우기
+}
+*/
+
+
+/**
+switch 문
+
+switch(num){ //변수 or 식
+    case //값
+}
+*/
+
+let num = 5;
+let data='';
+switch(num){
+    case 5:
+        data += '5';
+    case 4:
+        data += '4';
+    case 3:
+        data +='3';
+    case 2:
+        data += '2';
+    case 1:
+        data +='1';
+        break; //빠져나오고 싶을 떄 사용 
+    default:
+        data += '나머지경우';
+}
+
+console.log(data);
+
+console.log('----------------------------');
+
+/* prompt 사용 */
+// let num2 = prompt('숫자를 입력하세요>>', 0);
+// console.log(num2);
+
+/*
+숫자를 입력 받아서, 3으로 나누면 3의 배수
+4 -> 나마지 값 1
+5 -> 나머지 값 2
+*/
+
+document.getElementById('btn').onclick=function(){
+    let input = document.getElementById('num');
+    let num = Number(input.value);
+    let result = '나머지값은 ';
+    switch(num%3){
+        case 1:
+            result += 1;
+            break;
+        case 2:
+            result += 2;
+            break;
+        default:
+            result += 0;
+    }
+    document.getElementById('result').innerHTML = result;
+    input.value ='';
 }
