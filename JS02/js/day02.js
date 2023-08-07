@@ -23,7 +23,7 @@ console.log('global su', su);
 
 console.log('----------------------------');
 
-for(let i=1; i<=5; i++) {
+for(let i=1; i<6; i++) {
     console.log('i' , i);
 }
 // console.log('i', i);
@@ -39,10 +39,10 @@ if(tf){
 
 console.log('----------------------------');
 
-let arr=[10, 20, 30] //배열 
+let arr=[10, 20, 30] //배열
 
 let fn=function() {
-    console.log('function fn[]');  
+    console.log('function fn[]');
 }
 fn();
 console.log('arr.length', arr.length);
@@ -96,7 +96,7 @@ console.log('----------------------------');
 단항연산자
 -> ++(증감연산자), --(감소연산자)
 이항연산자
--> 산술연산자 : +,  -,  *,   /,   %,  ** 
+-> 산술연산자 : +,  -,  *,   /,   %,  **
 
  */
 
@@ -286,7 +286,7 @@ switch(num){
         data += '2';
     case 1:
         data +='1';
-        break; //빠져나오고 싶을 떄 사용 
+        break; //빠져나오고 싶을 떄 사용
     default:
         data += '나머지경우';
 }
@@ -435,3 +435,16 @@ while(m<10){
         continue;
     console.log(m);
 }
+
+console.log('----------------------------');
+
+let sungjuckArr = [60, 90, 70, 88, 100];
+
+// sungjuckArr.forEach(function(item, index){
+//     console.log(item, index);
+// });
+
+sungjuckArr.forEach(function(item){
+    console.log(item);
+});
+
