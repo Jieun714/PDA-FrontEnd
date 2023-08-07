@@ -188,6 +188,31 @@ if(kor>=60){
     console.log('불합격');
 }
 
+if(kor>=90){
+    console.log('수');
+} else if(kor>=80){
+    console.log('우');
+} else if(kor>=70){
+    console.log('미');
+} else if (kor>=60){
+    console.log('양');
+} else {
+    console.log('가');
+}
+
 console.log('----------------------------');
 
+console.log(10>=10 && 10!=10); //false
+console.log(10!==10 && 10>=10); //false
+console.log(10==10 && 20>=20); //true
+console.log(10>=10 || 10!=10); //true
+console.log(10!=10 || 10>=10); //true
 
+console.log('----------------------------');
+
+document.getElementById('btn').onclick=function(){
+    let elekor = document.getElementById('kor');
+    let kor = elekor.value;
+    console.log(kor);
+    elekor.value=''; //값 지우기
+}
