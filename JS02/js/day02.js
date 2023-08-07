@@ -327,3 +327,59 @@ document.getElementById('btn').onclick=function(){
 for(let i=10; i<15; i=i+2){
     console.log('i :'+i);
 }
+
+console.log('----------------------------');
+
+/* Iterable */
+let arr2 = ['a1', 'a2', 'a3'];
+console.log(arr2);
+for(let i=0; i<arr2.length; i++){
+    console.log(arr2[i]);
+}
+
+console.log('----------------------------');
+
+for(let item of arr){
+    console.log(item);
+}
+
+console.log('----------------------------');
+
+arr.forEach(item=>{
+    console.log(item);
+});
+
+console.log('----------------------------');
+
+let man={
+    irum : '홍길동',
+    age : 20,
+    addr: '서울'
+};
+console.log(typeof man, man); //object 타입
+console.log(man.irum);
+console.log(man.age);
+console.log(man.addr);
+
+console.log('----------------------------');
+
+for(let key in man){ //속성에 대한 정보를 출력
+    console.log('key :'+ key);
+}
+// 왜 배열에 작성하지 못하는지,,,
+
+console.log('----------------------------');
+
+for(let index in arr){
+    console.log(index);
+}
+
+console.log('----------------------------');
+
+let data1 = 'hello, javascript!!!';
+console.log(data1[1]); //인덱스 2에 해당하는 값
+
+data1[1] = t;
+console.log(data1[1]);
+
+console.log('----------------------------');
