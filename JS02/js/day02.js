@@ -425,3 +425,13 @@ for(let i=1; i<10; i++){
         continue;
     console.log(i);
 }
+
+console.log('----------------------------');
+
+let m = 0;
+while(m<10){
+    ++m;
+    if(m%3==0)
+        continue;
+    console.log(m);
+}
