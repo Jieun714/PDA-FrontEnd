@@ -417,3 +417,11 @@ while(true){
     k++;
     if(k==5) break;
 }
+
+console.log('----------------------------');
+
+for(let i=1; i<10; i++){
+    if(i%3==0)
+        continue;
+    console.log(i);
+}
