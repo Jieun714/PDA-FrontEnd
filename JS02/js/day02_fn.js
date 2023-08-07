@@ -100,7 +100,18 @@ show();
 console.log('-------- parameter 2 -------');
 show('lee', 'kim');
 
-console.log('-------- parameter 3-------');
+console.log('-------- parameter 3 -------');
 show('lee', 'kim', 'park');
+
+console.log('----------------------------');
+
+let arr1 = [10, 20, 30];
+let arr2 = [100, 200, 300];
+let arr3 = [...arr1, ...arr2]; //[10, 20, 30, 100, 200, 300]
+
+let prt6=function(t){
+    console.log(t[1]);
+}
+prt6(arr3);
 
 console.log('----------------------------');
