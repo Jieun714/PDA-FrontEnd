@@ -379,7 +379,24 @@ console.log('----------------------------');
 let data1 = 'hello, javascript!!!';
 console.log(data1[1]); //인덱스 2에 해당하는 값
 
-data1[1] = t;
-console.log(data1[1]);
+// data1[1] = t;
+// console.log(data1[1]); //에러가 발생. 읽기만 가능하고 할당은 불가능
+
+for(let item of data1){
+    console.log(item);
+}
+
+/*
+data1.forEach((item, index)=>{
+    console.log(itme, index);
+}); */
+
+console.log('----------------------------');
+
+/* while : 참일 동안 동작 */
+let i=0;
+while(i<5){
+    console.log(++i);
+}
 
 console.log('----------------------------');
