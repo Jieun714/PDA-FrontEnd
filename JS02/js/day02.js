@@ -163,3 +163,31 @@ console.log(x3);
 
 console.log('----------------------------');
 
+let max;
+let su1 = 10;
+let su2 = 20;
+max = (su1>su2)? su1:su2;
+console.log(max);
+
+console.log('----------------------------');
+
+/* 비트 연산 0- shift 연산 */
+let a4 = 10;
+console.log(a4>>2);
+console.log(a4<<2);
+
+console.log('----------------------------');
+
+/* 조건문 - if */
+let kor = 85;
+
+/* 합격/불합격 */
+if(kor>=60){
+    console.log('합격');
+} else{
+    console.log('불합격');
+}
+
+console.log('----------------------------');
+
+
