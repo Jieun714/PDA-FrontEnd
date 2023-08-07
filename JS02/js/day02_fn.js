@@ -115,3 +115,55 @@ let prt6=function(t){
 prt6(arr3);
 
 console.log('----------------------------');
+
+let add = function(a, b){
+    return a+b;
+}
+let tot = add(10+20);
+console.log(tot); //NaN
+
+console.log('----------------------------');
+
+let prt7=()=>"hong";
+let result2 = prt7();
+console.log(result2);
+
+console.log('----------------------------');
+let prt8 =()=>{
+    console.log('test1');
+    console.log('test2');
+}
+prt8();
+
+console.log('----------------------------');
+
+let prt9=(a, b)=>{
+    console.log('a :', a, ', b :'+ b);
+}
+prt9('test1', 'test2');
+
+console.log('----------------------------');
+
+let fn=function(a, b, t1){
+    console.log(a, b);
+    // console.log(t1);
+    t1(a, b);
+}
+
+let add2=function(su1, su2){
+    console.log('add function : ', (su1+su2));
+}
+
+fn(10, 20, add2); //변수처럼 넣은 함수 = 콜백함수
+
+console.log('----------------------------');
+
+[10, 20, 30].forEach(function(item){
+    console.log(item);
+});
+
+console.log('----------------------------');
+
+[10, 20, 30].forEach((item)=>{
+    console.log(item);
+});
