@@ -322,3 +322,8 @@ document.getElementById('btn').onclick=function(){
     document.getElementById('result').innerHTML = result;
     input.value ='';
 }
+
+/* for문 */
+for(let i=10; i<15; i=i+2){
+    console.log('i :'+i);
+}
