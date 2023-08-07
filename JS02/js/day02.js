@@ -210,6 +210,7 @@ console.log(10!=10 || 10>=10); //true
 
 console.log('----------------------------');
 
+/*
 document.getElementById('btn').onclick=function(){
     let elekor = document.getElementById('kor');
     let kor = elekor.value;
@@ -229,4 +230,34 @@ document.getElementById('btn').onclick=function(){
     document.getElementById('result').innerHTML='국어 점수: ' + kor + ', 결과: '+result;
 
     elekor.value=''; //값 지우기
+}
+*/
+
+
+document.getElementById('btn').onclick=function(){
+    let eleKor = document.getElementById('kor');
+    let eleEng = document.getElementById('eng');
+    let eleMath = document.getElementById('math');
+
+    let kor = Number(eleKor.value); //숫자형으로 변환
+    let eng = Number(eleEng.value);
+    let math = Number(eleMath.value);
+
+    console.log(kor, eng, math);
+    let avg = (kor+eng+math)/3;
+
+    let result ="<li> 평균점수 :"+avg + "</li>";
+    if(kor>=90 && eng>= 90 && math >= 90){
+        result += "<li> 성취도 : very good</li>";
+    } else if(kor>=90 || eng>= 90 || math >= 90) {
+        result += "<li> 성취도 : good</li>";
+    } else{
+        result += "<li> 성취도 : bad</li>";
+    }
+
+    document.getElementById('result').innerHTML = result;
+
+    eleKor.value=''; //값 지우기
+    eleEng.value=''; //값 지우기
+    eleMath.value=''; //값 지우기
 }
