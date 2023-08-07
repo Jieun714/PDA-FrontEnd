@@ -213,6 +213,20 @@ console.log('----------------------------');
 document.getElementById('btn').onclick=function(){
     let elekor = document.getElementById('kor');
     let kor = elekor.value;
-    console.log(kor);
+    let result ='';
+    if(kor>=90){
+        result ='수';
+    } else if(kor>=80){
+        result ='우';
+    } else if(kor>=70){
+        result ='미';
+    } else if (kor>=60){
+        result ='양';
+    } else {
+        result ='가';
+    }
+
+    document.getElementById('result').innerHTML='국어 점수: ' + kor + ', 결과: '+result;
+
     elekor.value=''; //값 지우기
 }
