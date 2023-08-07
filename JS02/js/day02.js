@@ -66,3 +66,15 @@ console.log(Array.isArray(arr));
 console.log(Array.isArray(person));
 
 console.log('----------------------------');
+
+let x = '10';
+let y = 20;
+let z = (x+y);
+console.log(typeof z, z);
+console.log(typeof (10/2), 10/2);
+console.log(typeof ('10'/2), ('10')/2);
+console.log(typeof ('a'/2), ('a')/2);
+
+console.log('----------------------------');
+
+
