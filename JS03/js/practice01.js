@@ -8,8 +8,7 @@ const addName=(function(){
     let idx = 0;
     let fn=function(){
         let name = document.getElementById('irum');
-
-        totName += (++idx + '. ' + name.value +'<br>');
+        totName += '<li>' + name.value +'</li>';
         name.value = '';
         return totName;
     };
