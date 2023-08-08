@@ -101,5 +101,46 @@ const user={
     naem: 'hong',
     [a]: 20
 }
-
 console.log(user);
+
+console.log("===============================");
+
+// console.log(s1);
+
+/* 반목문 - fon in */
+for(let item in s1){
+    console.log(item + ' : '+ s1[item]);
+}
+
+console.log("===============================");
+
+class Students{
+    constructor(irum, age){
+        this.irum = irum;
+        this.age = age;
+    }
+    prt=function(){
+        console.log('prt method');
+    }
+}
+
+// 원형 객체에 만들어서 사용 
+Students.prototype.prt=function(){
+    console.log('prt!!!!!');
+}
+
+let ins1=new Students("a1", 20);
+let ins2=new Students("a2", 10);
+
+console.dir(ins1); //목록 정보
+console.dir(ins2);
+
+// 메소드 호출
+ins1.prt();
+ins2.prt();
+
+console.log("===============================");
+
+
+
+
