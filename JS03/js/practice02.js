@@ -11,10 +11,19 @@ document.getElementById('add').addEventListener('click' ,function(){
     age.value ='';
 });
 
+/*
 document.getElementById('show').addEventListener('click', function(){
     let result = '';
-    arr.forEach(function(item){
+    arr.(function(item){
         result+=`<li> ${item} </li>`;
     });
     document.getElementById('result').innerHTML = result;
+});
+*/
+
+/* map 사용 시 */
+document.getElementById('show').addEventListener('click', function(){
+    let liList = arr.map((item)=>`<li> ${item} </li>`);
+
+    document.getElementById('result').innerHTML = liList;
 });
