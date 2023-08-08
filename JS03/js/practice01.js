@@ -5,7 +5,6 @@ document.getElementById('btn')
 
 const addName=(function(){
     let totName = '';
-    let idx = 0;
     let fn=function(){
         let name = document.getElementById('irum');
         totName += '<li>' + name.value +'</li>';
