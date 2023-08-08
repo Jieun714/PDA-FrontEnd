@@ -10,6 +10,7 @@ const addName=(function(){
         let name = document.getElementById('irum');
 
         totName += (++idx + '. ' + name.value +'<br>');
+        name.value = '';
         return totName;
     };
     return fn;
