@@ -83,12 +83,14 @@ console.log("==========================");
 let data = [10, 50, 40, 30, 100, 50];
 console.log(data);
 
+/* find */
 let result2 = data.find(function(element){
     // return element===50;
     return element>=40;
 });
 console.log(result2);
 
+/* filter */
 let result3 = data.filter(function(element){
     // return element===50;
     return element>=40;
@@ -96,4 +98,13 @@ let result3 = data.filter(function(element){
 console.log(result3);
 
 console.log("==========================");
+/* join 사용 */
+let nameArr = ['hong', 'kim', 'lee'];
+let result4 = nameArr.join(' ');
+
+console.log(result4);
+
+console.log("==========================");
+
+
 
