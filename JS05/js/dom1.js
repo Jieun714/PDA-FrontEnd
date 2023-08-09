@@ -50,7 +50,7 @@ console.log(ele_red1);
 }*/
 
 // spread 정보 사용
-[...ele_red].forEach(item=>item.className='green');
+// [...ele_red].forEach(item=>item.className='green');
 
 /*
     children: 자식 중 element type 요소만 반환
@@ -62,7 +62,7 @@ console.log(ele_red1);
 
     hasChildNode;
 */
-
+/*
 const ele_ul = document.getElementsByTagName('ul')[0];
 console.log(`children : ${ele_ul.children}`);
 console.log(`hasChildNodes : ${ele_ul.hasChildNodes}`);
@@ -75,4 +75,29 @@ let next_ele_m3 = ele_m3.nextElementSibling;
 console.log(next_ele_m3);
 next_ele_m3.style.backgroundColor='yellow';
 ele_m3.previousElementSibling.style.backgroundColor='skyblue';
+*/
 
+/*
+    className: class attribute 값을 변경하거나 얻어올때
+    classList
+*/
+/*
+let cName = document.getElementById('m2').className;
+console.log(cName); //green
+cName.className='red';
+*/
+
+let ele_li = document.querySelectorAll('li');
+/*
+ele_li.forEach(item=>{
+    if(item.classList.contains("red")){
+        item.classList.replace("red", "green");
+    }
+});
+*/
+
+ele_li.forEach(item=>{
+    if(item.className==='red'){
+        item.className='green';
+    }
+});
