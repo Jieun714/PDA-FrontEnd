@@ -143,3 +143,32 @@ document.getElementById('view_btn')
     let result = irums.map((item)=>`<li> ${item} </li>`);
     document.getElementById('result').innerHTML = result.join('');
 });
+
+console.log("==========================");
+/* 에러처리 */
+try{
+    console.log('test1');
+    console.log('test2');
+    let arr=new Array(-1);
+    console.log('test3');
+}catch(e){
+    console.log(e);
+} finally{
+    console.log('finally');
+}
+
+console.log("==========================");
+let t = 11;
+try{
+    if(t>20){
+        console.log('20보다 크다');
+    } else if(t==20){
+        throw "20과 같다";
+    } else{
+        throw "20보다 작다"
+    }
+} catch(e){
+    console.log(e);
+} finally{
+    console.log('finally');
+}
