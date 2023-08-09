@@ -68,5 +68,32 @@ console.log(`id: ${result[0]}, domain: ${result[1]}`);
 /* indexOf와 slice 사용  */
 let idx = email.indexOf('@'); //인덱스 추출
 let id2 = email.slice(0, idx);
-let domain2 = email.slice(idx+1, email.length);
+let domain2 = email.slice(idx+1);
 console.log(`id: ${id2}, domain: ${domain2}`);
+
+console.log("==========================");
+let arr=[10,20,30];
+let arr2=new Array(100, 200, 300);
+let newArr = arr.concat(arr2, ['t1','t2']);
+
+console.log(arr);
+console.log(newArr);
+
+console.log("==========================");
+let data = [10, 50, 40, 30, 100, 50];
+console.log(data);
+
+let result2 = data.find(function(element){
+    // return element===50;
+    return element>=40;
+});
+console.log(result2);
+
+let result3 = data.filter(function(element){
+    // return element===50;
+    return element>=40;
+});
+console.log(result3);
+
+console.log("==========================");
+
