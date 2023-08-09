@@ -1,0 +1,14 @@
+body{
+    width: 90%;
+}
+#view{
+    display: block;
+    width: 100%;
+    border: 1px solid silver;
+    margin-bottom: 3vh;
+}
+.layout{
+    display: inline-block;
+    width: 32.5%;
+    padding: 0;
+}
