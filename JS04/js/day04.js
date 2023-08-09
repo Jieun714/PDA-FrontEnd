@@ -105,6 +105,19 @@ let result4 = nameArr.join(' ');
 console.log(result4);
 
 console.log("==========================");
+/* push, pop */
+let arr3=[];
+arr3.push("aaa");
+arr3.push("bbb");
+arr3.push("ddd");
+console.log(`배열의 길이: ${arr3.length}, 배열: ${arr3}`);
 
+console.log("==========================");
+arr3.forEach(item=>console.log(item));
+console.log(arr3.length);
 
+let d1 = arr3.pop("bbb");
+console.log(`삭제할 요소: ${d1}, 삭제된 이후 배열: ${arr3}`);
+
+console.log("==========================");
 
