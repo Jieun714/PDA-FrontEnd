@@ -120,4 +120,26 @@ let d1 = arr3.pop("bbb");
 console.log(`삭제할 요소: ${d1}, 삭제된 이후 배열: ${arr3}`);
 
 console.log("==========================");
+/*
+1. forEach
+2. map
+*/
+let irums=['홍', '김', '이', '박', '나'];
 
+/*
+document.getElementById('view_btn')
+    .addEventListener('click', function(){
+    let result ='';
+    irums.forEach(item=>{
+        result += `<li>${item}</li>`;
+    });
+    document.getElementById('result').innerHTML = result;
+});
+*/
+
+/* map */
+document.getElementById('view_btn')
+    .addEventListener('click', function(){
+    let result = irums.map((item)=>`<li> ${item} </li>`);
+    document.getElementById('result').innerHTML = result.join('');
+});
