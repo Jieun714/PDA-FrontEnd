@@ -6,6 +6,7 @@ document.getElementById('win_open').onclick=function(){
 }
 */
 
+/*
 let d = document.body;
 console.log(d);
 
@@ -29,3 +30,24 @@ console.log(child1);
 // 세 번째 자료 선택
 let lis = document.getElementsByTagName('li')[2].className;
 console.log(lis);
+
+*/
+
+let ele_red = document.getElementsByClassName('red');
+let ele_red1 = document.querySelectorAll('.red');
+
+console.log(ele_red);
+console.log(ele_red1);
+
+// length를 반대로
+/*for(let i= ele_red.length-1; i>=0; i--){
+    ele_red[i].className = 'green';
+}*/
+
+// querySelectorAll 사용
+/*for(let item of ele_red1){
+    item.className = 'green';
+}*/
+
+// spread 정보 사용
+[...ele_red].forEach(item=>item.className='green');
