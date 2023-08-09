@@ -138,11 +138,13 @@ document.getElementById('view_btn')
 */
 
 /* map */
+/*
 document.getElementById('view_btn')
     .addEventListener('click', function(){
     let result = irums.map((item)=>`<li> ${item} </li>`);
     document.getElementById('result').innerHTML = result.join('');
 });
+*/
 
 console.log("==========================");
 /* 에러처리 */
@@ -172,3 +174,32 @@ try{
 } finally{
     console.log('finally');
 }
+
+console.log("==========================");
+
+document.getElementById('btn').addEventListener('click', function(){
+    const txtName = document.getElementById('irum');
+    const txtAge = document.getElementById('age');
+
+    try{
+        let age = Number(txtAge.value);
+        if(Number.isNaN(age)){ //숫자형 자료가 아닐때
+            throw new Error("숫자형 자료가 아님!!");
+        } else{
+            if(age < 0){
+                throw new Error("0보다 작습니다.");
+            } else {
+                let result = `이름: ${txtName.value}<br> 나이: ${age}`;
+                document.getElementById('result').innerHTML = result;
+            }
+        }
+    } catch(e){
+        console.log(e);
+        // document.getElementById('result').innerHTML = '';
+    } finally{
+        console.log('done');
+    }
+
+    irum.value='';
+    age.value='';
+});
