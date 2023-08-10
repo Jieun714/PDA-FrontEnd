@@ -1,5 +1,5 @@
 
-let ele_tr = document.querySelectorAll("tbody tr");
+let ele_tr = document.querySelectorAll("tbody>tr");
 
 for(let item of ele_tr){
     item.addEventListener('click', function(){
