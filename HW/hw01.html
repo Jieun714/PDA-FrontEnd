@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/hw01.css">
+    <script defer src="js/hw01.js"></script>
+</head>
+
+<body>
+    <label for="list">목록 추가</label>
+    <input type="text" id="irum" onkeypress="enterKeyPress(event)" autofocus>
+    <button type="button" id="addBtn">추가</button><br>
+    <div class="wrap">
+        <select id="leftBox" size="10" multiple>
+        </select>
+        <div class="btnGroup">
+            <button type="button" id="leftToRightBtn"> =>> </button>
+            <button type="button" id="rightToLeftBtn"> <<= </button>
+        </div>
+        <select id="rightBox" size="10" multiple>
+        </select>
+    </div>
+</body>
+
+</html>
