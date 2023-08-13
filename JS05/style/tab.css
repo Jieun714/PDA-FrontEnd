@@ -1,0 +1,55 @@
+.tablist {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #DFCCFB;
+}
+
+.tabItem{
+    display: inline-block;
+    width: 20vw; 
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tabItem>a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 2vh 5vw;
+    margin: 0;
+}
+
+.tabpanel{
+    display: none;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/* 추가 중 */
+div.tabpanel{
+    position: absolute;
+    top: 12vh;
+    width: 100%;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #DFCCFB;
+}
+
+.tabpanel h2, .tabpanel p{
+    margin: 0 5vw;
+}
+
+.visit{
+    display: block;
+}
+
+.bgpanel{
+    background-color: #DFCCFB;
+    color: white;
+}
